@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registry"
+    android:background="@color/color.Layout.Registry">
+
+    <RelativeLayout
+        android:id="@+id/header.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin.buttom.registry.header">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="@dimen/img.Ancho.registry"
+            android:layout_height="@dimen/img.largo.registry"
+            android:src="@drawable/pizza"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/img.margin.top.registry"/>
+
+        <TextView
+            android:id="@+id/txtTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/color.text.primary"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/imageLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop ="@dimen/txt.margin.top"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtUsername.resgitry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/header.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.username.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@+id/txtUsername.resgitry"/>
+
+    <TextView
+        android:id="@+id/txt.apellidos.resgitry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apellidoPaterno"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.username.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.apellidos.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@+id/txt.apellidos.resgitry"/>
+
+    <TextView
+        android:id="@+id/txt.Email.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.apellidos.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.email.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@id/txt.Email.registry"/>
+
+    <TextView
+        android:id="@+id/txt.password.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Password"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.email.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.password.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/required.password"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@id/txt.password.registry"/>
+
+    <TextView
+        android:id="@+id/txt.confirm.password.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmPassword"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.password.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.confirm.password.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@id/txt.confirm.password.registry"/>
+
+    <TextView
+        android:id="@+id/txt.phoneNumber.resgitry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PhoneNumber"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.confirm.password.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.phoneNumber.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@id/txt.phoneNumber.resgitry"/>
+
+    <TextView
+        android:id="@+id/txt.address.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Address"
+        android:textColor="@color/color.text.primary"
+        android:layout_below="@+id/edit.phoneNumber.registry"
+        android:padding="0dp"/>
+    <EditText
+        android:id="@+id/edit.address.registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color.inputs.primary"
+        android:layout_below="@id/txt.address.registry"/>
+
+    <Button
+        android:id="@+id/btn_registrar_registry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginTop="@dimen/margin.top.button.registry"
+        android:textColor="@color/color.text.secondary"
+        android:background="@color/color.buttons.registry"
+        android:layout_below="@id/edit.address.registry"/>
+    
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout.color.secondari"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/R.layout.header.home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin.top.home">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/header.saludo"
+            android:gravity="center"
+            android:textColor="@color/color.text.primary"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="@dimen/margin.bottom.header"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R.Layout.home.uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R.layout.header.home"
+        android:layout_margin="@dimen/margin.content.home">
+
+        <ImageView
+            android:id="@+id/img.ic_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img.largo.home"
+            android:src="@mipmap/ic_moto"
+            android:layout_margin="@dimen/margin.items.home"/>
+
+        <TextView
+            android:id="@+id/txt.realizar_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/llevarPedido"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/img.ic_one"
+            android:layout_margin="@dimen/margin.items.home"
+            android:textColor="@color/color.text.primary"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ordenar"
+            android:textColor="@color/color.text.secondary"
+            android:background="@color/color.buttons.home"
+            android:layout_below="@+id/txt.realizar_pedido"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout.home.two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin.top.layout"
+        android:layout_below="@+id/R.Layout.home.uno"
+        android:layout_margin="@dimen/margin.content.home">
+
+        <ImageView
+            android:id="@+id/img.ic_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img.largo.home"
+            android:src="@mipmap/ic_store"
+            android:layout_margin="@dimen/margin.items.home"/>
+
+        <TextView
+            android:id="@+id/txt.realizar_pedido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RecogerPedido"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/img.ic_two"
+            android:layout_margin="@dimen/margin.items.home"
+            android:textColor="@color/color.text.primary"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ordenar"
+            android:textColor="@color/color.text.secondary"
+            android:background="@color/color.buttons.home"
+            android:layout_below="@+id/txt.realizar_pedido2"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

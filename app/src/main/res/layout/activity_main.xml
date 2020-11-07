@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/color.Rl.primary">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/img.Ancho"
+        android:layout_height="@dimen/img.largo"
+        android:src="@drawable/pizza"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/img.margin.top"/>
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/color.text.secondary"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/imageLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop ="@dimen/txt.margin.top"/>
+
+    <RelativeLayout
+        android:id="@+id/Rl.main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTittle"
+        android:paddingLeft="@dimen/pading.Rl.secondary"
+        android:paddingRight="@dimen/pading.Rl.secondary">
+
+        <EditText
+            android:id="@+id/EditUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.top.items.login"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/color.text.secondary"
+            android:textColor="@color/color.text.secondary"
+            android:backgroundTint="@color/color.inputs.secondary"/>
+
+
+        <EditText
+            android:id="@+id/EditTxtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditUsername"
+            android:layout_marginTop="@dimen/margin.top.items.login"
+            android:hint="@string/Password"
+            android:textColorHint="@color/color.text.secondary"
+            android:textColor="@color/color.text.secondary"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/color.inputs.secondary"/>
+
+        <RelativeLayout
+            android:id="@+id/Rl.theerty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditTxtPassword"
+            android:layout_marginTop="@dimen/margin.top.layout">
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color.text.primary"
+                android:background="@drawable/background_button"
+                android:layout_marginTop="@dimen/margin.top.items.button"
+                android:text="@string/txt.button.login" />
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button2"
+                android:layout_below="@+id/btnlogin"
+                android:layout_marginTop="@dimen/margin.top.items.button"
+                android:text="@string/txt.button.crate.accound"
+                android:textColor="@color/color.text.secondary"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Rl.theerty">
+
+            <Button
+                android:id="@+id/btnforgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin.top.fotter.button"
+                android:text="@string/txt.button.Forget"
+                android:textColor="@color/color.text.secondary"
+                android:background="?attr/selectableItemBackground" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

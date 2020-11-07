@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color.Rl.primary">#373636</color>
+    <color name="color.text.primary">#000</color>
+    <color name="color.text.secondary">#fff</color>
+    <color name="color.buttons">#fff</color>
+    <color name="color.inputs.secondary">#fff</color>
+    <color name="color.inputs.primary">#000</color>
+    <color name="color.Layout.Registry">#6AB8DFD6</color>
+    <color name="color.buttons.registry">#292727</color>
+    <color name="color.buttons.home">#5BCBE8</color>
+    <color name="layout.color.secondari">#fff</color>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Buzsi Pizza</string>
+    <string name="txt.button.login">log in</string>
+    <string name="txt.button.crate.accound">Create as account</string>
+    <string name="txt.button.Forget">Forgot Password?</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="username">Username</string>
+    <string name="welcome">welcome</string>
+    <string name="apellidoPaterno">Apellido Paterno</string>
+    <string name="apellidoMaterno">Apellido Materno</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="Address">Address</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="required.password">introduce mas de 8 caracteres</string>
+    <string name="Ordenar">ORDENAR AHORA</string>
+    <string name="llevarPedido">Llevamos tu orden</string>
+    <string name="RecogerPedido">Recoger tu orden</string>
+    <string name="header.saludo">¿En donde entregamos tu orden?</string>
+</resources>

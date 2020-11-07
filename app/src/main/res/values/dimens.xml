@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img.Ancho">180dp</dimen>
+    <dimen name="img.largo">180dp</dimen>
+    <dimen name="img.margin.top">70dp</dimen>
+    <dimen name="txt.margin.top">10dp</dimen>
+    <dimen name="margin.top.items.login">40dp</dimen>
+    <dimen name="margin.top.items.button">10dp</dimen>
+    <dimen name="pading.Rl.secondary">20dp</dimen>
+    <dimen name="margin.top.layout">20dp</dimen>
+    <dimen name="margin.top.fotter.button">95dp</dimen>
+    <dimen name="img.margin.top.registry">10dp</dimen>
+    <dimen name="img.Ancho.registry">100dp</dimen>
+    <dimen name="img.largo.registry">100dp</dimen>
+    <dimen name="margin.buttom.registry.header">20dp</dimen>
+    <dimen name="margin.top.button.registry">50dp</dimen>
+    <dimen name="margin.top.home">80dp</dimen>
+    <dimen name="margin.items.home">10dp</dimen>
+    <dimen name="margin.bottom.header">20dp</dimen>
+    <dimen name="margin.content.home">10dp</dimen>
+    <dimen name="img.largo.home">100dp</dimen>
+</resources>
